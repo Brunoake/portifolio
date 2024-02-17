@@ -35,21 +35,26 @@ header{
 display: flex;
 justify-content: end;
 border-bottom: 1px solid #aaaaaa2d;
+position: fixed;
+background-color: #0F0F0F;
+z-index: 1000;
+width: 100%;
+height: 90px;
+top: -10px;
 }
 
 
 nav ul{
 display: flex;
 flex-direction: row;
-margin-top: 30px;
-margin-bottom: 35px;
 margin-right: 5rem;
+position: relative;
+top: 50px;
 }
 
 #links-header li{
     margin-left: 24px;
     list-style: none;
-   
 }
 
 #links-header li >  a{
@@ -375,8 +380,102 @@ transform: translate(20px) translateY(-1rem) translateX(-5rem);
 .hab-img:nth-child(5){
     transform: translate(80px) translateY(1rem) translateX(-22rem);
     }
+
+#project-container{
+    margin-top: 12rem;
+}
+
+#project-container h2{
+    color: #AAAAAA;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+}
     
+#grid-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    overflow: hidden;
+}
+
+#grid-projects img{
+    object-fit: cover;
+
+}
 
 .projects img{
-    width: 10px;
+    width: 320px;
+    height: 290px;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+}
+
+.hide{
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #0F0F0F;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #aaaaaa72;
+    left: -15rem;
+    margin-bottom: 1rem;
+    transition: all .4s;
+}
+
+.hide:hover{
+   filter: invert();
+}
+
+.hide a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email h3{
+    color:  #AAAAAA;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+#email{
+   display: flex;
+   flex-direction: column;
+   margin-top: 12rem;
+   margin-bottom: 12rem;
+}
+
+#email a{
+text-decoration: none;
+color: #fff;
+}
+
+#email a h5{
+    font-size: 2.5em;
+}
+
+#redes{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#redes a{
+    color: #fff;
+    margin-left: 22px;
+    font-size: 1.5em;
+}
+
+#copy{
+    display: flex;
+    color: #fff;
+    font-size: 1.1em;
 }
