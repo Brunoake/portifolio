@@ -26,6 +26,8 @@
     100%{opacity: 1;}
 }
 
+
+
 body{
     background-color: #0F0F0F;
     overflow-x: hidden;
@@ -495,7 +497,8 @@ color: #fff;
     #hamburguer{
         border: none;
         background: none;
-        border-top: 3px solid #fff;
+        border-top: 3px solid #fffffffb;
+        z-index: 1;
         cursor: pointer;
         margin-top: 14px;
         margin-right: 14px;
@@ -509,10 +512,6 @@ color: #fff;
         height: 3px;
         background: #fff;
         margin-top: 5px;
-    }
-
-    .hide{
-       
     }
 
    #links-header{
