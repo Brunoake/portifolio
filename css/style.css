@@ -550,6 +550,7 @@ color: #fff;
     transition: 1s ease-in;
     cursor: pointer;
     transform: translateX(100%);
+    color: transparent;
    }
 
     #links-header li {
@@ -559,6 +560,7 @@ color: #fff;
 
     #links-header.active{
       transform: translateX(0);
+      color: #fff;
     }
 
     

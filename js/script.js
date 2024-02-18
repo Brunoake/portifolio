@@ -69,7 +69,6 @@ const contacts = document.querySelector("#link5")
 home.addEventListener("click", () => {
     scrollToElement("#home")
 })
-
 about.addEventListener("click", () => {
     scrollToElement("#sobre-container")
 })
