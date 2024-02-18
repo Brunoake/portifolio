@@ -121,7 +121,7 @@ transition: .3s;
     margin-top: 5rem;
 } 
 
-#mouse{
+/* #mouse{
    -webkit-transform: none;
     border: 1px solid #ccc;
     width: 25px;
@@ -140,22 +140,26 @@ display: block;
 position: relative;
 border-radius: 8px;
 animation: scroll .8s linear infinite;
+} */
+
+.arrow-container{
+    margin-top: 12rem;
+    margin-bottom: 12rem;
 }
 
-
- .mouse-container span{
+  .arrow-container span{
     color: #aaa;
     cursor: default;
     font-family: "Rubik", sans-serif;
     font-size: 14px;
     font-weight: 400px;
-} 
+}  
 
-.mouse-container div{
+.arrow-container div{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} 
 
 .arrows{
 border-bottom: 1px solid hsla(0,0%,67%,.8);
@@ -586,9 +590,7 @@ color: #fff;
     
 
 
-    #mouse {
-        display: none;
-    }
+    
 
     #sobre-container{
         flex-direction: column;
@@ -727,9 +729,7 @@ color: #fff;
     
 
 
-    #mouse {
-        display: none;
-    }
+    
 
     #sobre-container{
         flex-direction: column;
