@@ -50,11 +50,11 @@ justify-content: end;
 border-bottom: 1px solid #aaaaaa2d;
 position: fixed;
 background-color: #0F0F0F;
-z-index: 1000;
 width: 100%;
-height: 90px;
+height: 110px;
 top: -10px;
 }
+
 
 
 nav ul{
@@ -89,7 +89,7 @@ transition: .3s;
 #home{
     width: 42%;
     margin-left: 8rem;
-    margin-top: 5rem;
+    margin-top: 12rem;
 }
 
 #home h3{
@@ -415,21 +415,25 @@ transform: translate(20px) translateY(-1rem) translateX(-5rem);
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     overflow: hidden;
+    
 }
 
 #grid-projects img{
     object-fit: cover;
-
+    margin-left: 4rem;
 }
+
+
 
 .projects img{
     width: 320px;
     height: 290px;
     margin-bottom: 3rem;
     border-radius: 12px;
+   
 }
 
-.hide{
+.btn{
     width: 150px;
     height: 45px;
     border-radius: 8px;
@@ -437,16 +441,16 @@ transform: translate(20px) translateY(-1rem) translateX(-5rem);
     position: relative;
     cursor: pointer;
     border: 1px solid #aaaaaa72;
-    left: -15rem;
+    left: 10rem;
     margin-bottom: 1rem;
     transition: all .4s;
 }
 
-.hide:hover{
+.btn:hover{
    filter: invert();
 }
 
-.hide a{
+.btn a{
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
@@ -517,6 +521,9 @@ color: #fff;
     background: #fff;
     margin-top: 5px;
 }
+
+
+
 /* Media query */
 
 @media (max-width: 768px) {
@@ -553,13 +560,13 @@ color: #fff;
     background: #0f0f0f7e;
     transition: 1s ease-in;
     cursor: pointer;
-    transform: translateX(100%);
-    color: transparent;
+    transform: translateX(120%);
    }
 
     #links-header li {
         margin-left: 10px;
         margin-bottom: 0;
+        display: none;
     }
 
     #links-header.active{
@@ -572,86 +579,209 @@ color: #fff;
 
     #home {
         width: 100%;
-        margin-left: 0;
-        margin-top: 8rem;
-        margin-inline: 1rem;
-        margin-left: 2rem;
-        
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #home h3{
         text-align: center;
+        margin-left: -1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
+    #home h2{
+        font-size: 1.2rem;
+        margin-bottom: .9rem;
+        margin-left: .5rem;
+    }
+
+    #home h2 > span{
+        font-size: 1.2rem;
+    }
     #home p{
-        width: 80%;
+        margin-left: -2rem;
     }
-    
-    
 
-
-    
 
     #sobre-container{
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       
+    }
+
+    #container-right{
+        width: 100%;
+        display: flex;
+       
+       
+    }
+
+    #content-right:nth-child(2){
+        margin-top: 4rem;
+        
+    }
+
+    #container-center{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #content-center img{
+        width: 100%;
+    }
+
+    #container-left{
+        margin-top: 2rem;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    #content-left{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    #content-left p{
+        font-size: .9rem;
+    }
+
+    #container-left h3{
+        margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    #container-left p{
+        text-align: start;
+        margin-left: 2px;
+        font-size: .9rem;
+
     }
 
     #habilidades{
         flex-direction: column;
     }
+
+    
     #skill-container{
         margin-bottom: 3rem;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+   
+    #skill-container p{
+        margin-left: 12px;
+       font-size: .9rem;
+       width: 100%;
+       text-align: start;
+    }
+
+    
+
+    .hab-img{
+         width: 4rem;
+         height: 4rem;
+       border-radius: 50%;
         
     }
 
-    .hab-img {
-        width: 60px;
-        height: 60px;
-        height: 5rem;
+     
+
+    .hab-img img{
+        width: 40px;
+        height: 40px;
     }
 
-    #container-left{
-        margin-top: 2rem;
-    
-    }
-    #habilidades-img{
-        margin-left: 9rem;
-        width: 100%;
-    }
-
+    .hab-img:nth-child(1){
+        transform: translate(10px) translateY(1rem) translateX(-0rem);
+        }
+        
+        .hab-img:nth-child(2){
+            transform: translate(-10px) translateY(1rem) translateX(-2rem);
+            }
+            
+        .hab-img:nth-child(3){
+            transform: translate(20px) translateY(10rem) translateX(-13rem);
+            }
+            
+        .hab-img:nth-child(4){
+            transform: translate(-2px) translateY(8rem) translateX(2rem);
+            }
+            
+        .hab-img:nth-child(5){
+            transform: translate(60px) translateY(1rem) translateX(-10rem);
+            }
+        
     #project-container{
         display: grid;
       position: relative;
       text-align: center;
+    
     }
 
    #grid-projects{
    grid-template-columns: repeat(1, 1fr);
    gap: 10px;
+  
    }
 
-   
+   #grid-projects img{
+    margin-left: 0;
+   }
 
     .projects img {
-        width: 80%;
-        height: auto;
+        width: 90%;
+        height: 100%;
        margin: auto;
        padding-bottom: 4rem;
+       
     }
 
-
-
-    .hide {
+    .btn {
         left: 2%;
       
     }
 
-    #email a{
-        margin-top: 2rem;
+    #contato{
+        margin-top: 6rem;
     }
 
-    #email a h5{
-        font-size: 1.7em;
+    #email{
+        margin-top: 2rem;
+       margin-bottom: 6rem;
+    }
+
+    #email a{
+        font-size: 1rem;
+    }
+
+    #email > a > h5{
+        font-size: .9rem;
+        
+    }
+
+    #email h4{
+        color: #fff;
+        text-align: center;
+        margin-top: 5rem;
+        font-size: 1.4rem;
+    }
+    #redes{
+        margin-top: 1rem;
+    }
+
+    #copy{
+        text-align: center;
+        color: #fff;
+        margin-top: 1rem;
     }
 }
 
@@ -660,7 +790,11 @@ color: #fff;
 
 
 @media (max-width: 1200px) {
-   
+
+    body{
+       overflow-x: hidden;
+    }
+  
     header {
         height: 60px;
         top: 0;
@@ -673,11 +807,14 @@ color: #fff;
     
     #hamburguer{
         display: block;
+        position: relative;
+        left: -250%;
     }
 
 #hamburguer::before,
 #hamburguer::after{
     display: block;
+ 
 }
 
 
@@ -694,7 +831,7 @@ color: #fff;
     background: #0f0f0f7e;
     transition: 1s ease-in;
     cursor: pointer;
-    transform: translateX(100%);
+    transform: translateX(120%);
    }
 
     #links-header li {
@@ -762,7 +899,6 @@ color: #fff;
         display: grid;
       position: relative;
       text-align: center;
-      
     }
 
    #grid-projects{
@@ -773,9 +909,14 @@ color: #fff;
 
    
 
+
+    .projects{
+        margin-bottom: 5rem;
+    }
+
     .projects img {
-        width: 80%;
-        height: auto;
+        width: 50%;
+        height: 100%;
        margin: auto;
       margin-left: 1rem;
 
@@ -783,8 +924,10 @@ color: #fff;
 
 
 
-    .hide {
-      left: 2%;  
+    .btn {
+    top: 17%;
+    left: -32%;
+ 
     }
 
     #email a{
