@@ -695,7 +695,7 @@ cccccccccccccccccccccccccccccccccccccccc */
          width: 4rem;
          height: 4rem;
        border-radius: 50%;
-        
+        margin-left: 3rem;
     }
 
      
@@ -743,10 +743,13 @@ cccccccccccccccccccccccccccccccccccccccc */
     margin-left: 2rem;
     
    }
+   #project-container h2{
+    margin-left: 1rem;
+   }
 
     .projects img {
-        width: 60%;
-        height: auto;
+        width: 80%;
+        height: 90%;
         margin-left: 2rem;
         margin-bottom: 0;
     }
@@ -761,13 +764,13 @@ cccccccccccccccccccccccccccccccccccccccc */
     }
 
     #email{
-        padding: 2rem;
+        
         margin-top: 2rem;
+        margin-left: 2rem;
     }
 
     #email a{
         font-size: 1rem;
-        margin-left: 1rem;
     }
 
     #email > a > h5{
@@ -775,15 +778,15 @@ cccccccccccccccccccccccccccccccccccccccc */
         
     }
 
-    #email h4{
+    #contato h4{
         color: #fff;
         text-align: center;
         margin-top: 7rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         font-size: 1.4rem;
     }
     #redes{
-        
+
         margin-left: 1rem;
     }
 
